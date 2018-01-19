@@ -1,7 +1,3 @@
-Invoke-WebRequest -Uri 'https://aka.ms/cosmosdb-emulator' -OutFile 'cosmos-db.msi'
-
-cmd /c start /wait msiexec /i cosmos-db.msi /qn /quiet /norestart /log install.log  
-
 Set-Content -Value '"C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe" /NoUI /NoExplorer /NoFirewall' -Path .\startCosmosDb.cmd
 
 Start-Process -FilePath .\startCosmosDb.cmd
