@@ -3,10 +3,14 @@ image: Visual Studio 2017
 init:
 - cmd: git config --global core.autocrlf true
 install:
-- cmd: docker pull microsoft/azure-cosmosdb-emulator 
-- cmd: md %LOCALAPPDATA%\CosmosDBEmulatorCert 2>null
-- cmd: docker run -v %LOCALAPPDATA%\CosmosDBEmulatorCert:c:\CosmosDBEmulator\CosmosDBEmulatorCert -P -t -i -m 1GB microsoft/azure-cosmosdb-emulator
-- cmd: netstat -ab
+#- cmd: docker pull microsoft/azure-cosmosdb-emulator 
+#- cmd: md %LOCALAPPDATA%\CosmosDBEmulatorCert 2>null
+#- cmd: docker run -v %LOCALAPPDATA%\CosmosDBEmulatorCert:c:\CosmosDBEmulator\CosmosDBEmulatorCert -P -t -i -m 1GB microsoft/azure-cosmosdb-emulator
+- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
+- cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
+- ps: Start-Process "c:\projects\AppVeyorInstall.CosmosDb\start-emulator.cmd
+- ps: sleep 10
+#- cmd: netstat -ab
 before_build:
 - cmd: nuget restore
 build:
