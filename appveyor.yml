@@ -9,8 +9,8 @@ install:
 - ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
 - cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
 - ps: Start-Process "start-emulator.cmd"
-- ps: sleep 10
-#- cmd: netstat -ab
+- ps: .\wait-connect-cosmosdb.ps1
+- cmd: netstat -ab
 before_build:
 - cmd: nuget restore
 build:
