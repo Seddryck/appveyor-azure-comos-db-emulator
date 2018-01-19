@@ -1,0 +1,11 @@
+version: build.{build}
+image: Visual Studio 2017
+init:
+- cmd: git config --global core.autocrlf true
+install:
+- cmd: docker pull microsoft/azure-cosmosdb-emulator 
+- cmd: md %LOCALAPPDATA%\CosmosDBEmulatorCert 2>null
+- cmd: docker run -v %LOCALAPPDATA%\CosmosDBEmulatorCert:c:\CosmosDBEmulator\CosmosDBEmulatorCert -P -t -i -m 2GB microsoft/azure-cosmosdb-emulator
+- cmd: netstat -ab
+#- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmosdb-emulator.msi'
+#- cmd: 7z x c:\projects\neo4j-community-3.3.0-windows.zip -oc:\projects\neo4j#- ps: .\setup-neo4j.ps1
