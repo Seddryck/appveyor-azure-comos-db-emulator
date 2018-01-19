@@ -12,7 +12,10 @@ while(!$client.Connected -and $attempt -lt $max) {
 
 	catch {
 		if($attempt -eq $max) {
-			write-host "CosmosDB was not started"; $client.Close(); return
+			write-host "CosmosDB was not started"
+			$client.Close()
+			return
+		}
 	}
 
 	[int]$sleepTime = 5*$attempt
