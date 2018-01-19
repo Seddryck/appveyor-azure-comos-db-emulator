@@ -27,7 +27,6 @@ namespace AppVeyor_CosmosDB
             var client = new DocumentClient(new Uri(EndpointUrl), AuthKey);
             var ex = Assert.ThrowsAsync<DocumentClientException>(async () => await client.ReadDatabaseAsync(UriFactory.CreateDatabaseUri("NotExistingDB")));
             Assert.That(ex.StatusCode, Is.EqualTo(HttpStatusCode.NotFound));
-
         }
     }
 }
