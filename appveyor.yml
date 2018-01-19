@@ -8,7 +8,7 @@ install:
 #- cmd: docker run -v %LOCALAPPDATA%\CosmosDBEmulatorCert:c:\CosmosDBEmulator\CosmosDBEmulatorCert -P -t -i -m 1GB microsoft/azure-cosmosdb-emulator
 - ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
 - cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
-# - ps: Start-Process "start-emulator.cmd"
+- ps: Start-Process "start-emulator.cmd"
 - ps: .\wait-connect-cosmosdb.ps1
 - cmd: netstat -ab
 before_build:

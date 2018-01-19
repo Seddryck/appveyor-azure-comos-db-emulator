@@ -1,1 +1,1 @@
-C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe"  /NoExplorer /NoFirewall /NoUI
+"C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe"  /NoExplorer /NoFirewall /NoUI
