@@ -1,7 +1,8 @@
 repo_name: Seddryck/appveyor-azure-comos-db-emulator
 report_id: c6cce5d46f47634eff5d5aba6fd042d3
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-12T20:23:53+00:00'
+timestamp: '2024-01-05T08:48:05+00:00'
 requested_by: Seddryck
 provider: github
 branch: master
@@ -17,7 +18,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png
-  detection_source_url: AppVeyorInstall.CosmoDb/AppVeyorInstall.CosmoDb.csproj
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb/AppVeyorInstall.CosmoDb.csproj
   detection_source: AppVeyorInstall.CosmoDb/AppVeyorInstall.CosmoDb.csproj
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:05:29.000000000 Z
@@ -30,6 +31,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -41,6 +43,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb/packages.config
   detection_source: AppVeyorInstall.CosmoDb/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:05:29.000000000 Z
@@ -52,6 +55,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator
   detection_source: Repo Metadata
 - name: NUnit
   description: An open-source unit testing framework
@@ -61,6 +65,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2371/jZ6MYx5Y_400x400.png
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb/packages.config
   detection_source: AppVeyorInstall.CosmoDb/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:05:29.000000000 Z
@@ -72,6 +77,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb/packages.config
   detection_source: AppVeyorInstall.CosmoDb/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:05:29.000000000 Z
@@ -84,6 +90,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb.sln
   detection_source: AppVeyorInstall.CosmoDb.sln
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:29:24.000000000 Z
@@ -96,6 +103,7 @@ tools:
   category: Application Hosting
   sub_category: Cloud Hosting
   image_url: https://img.stackshare.io/service/213/default_88defae415fcb9cd0ac5d36c1ed27e74133c6287.jpg
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb/packages.config
   detection_source: AppVeyorInstall.CosmoDb/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:05:29.000000000 Z
@@ -107,6 +115,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/3681/powershell-logo.png
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator
   detection_source: Repo Metadata
 - name: Microsoft.Azure.DocumentDB
   description: This client library enables client applications to connect to Azure
@@ -118,7 +127,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13231/default_44258eb565a346d4baf5243c0df2a219253fec1a.png
-  detection_source_url: AppVeyorInstall.CosmoDb/packages.config
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb/packages.config
   detection_source: AppVeyorInstall.CosmoDb/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:05:29.000000000 Z
@@ -132,13 +141,19 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/nuget/image.png
-  detection_source_url: AppVeyorInstall.CosmoDb/packages.config
+  detection_source_url: https://github.com/Seddryck/appveyor-azure-comos-db-emulator/blob/master/AppVeyorInstall.CosmoDb/packages.config
   detection_source: AppVeyorInstall.CosmoDb/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-01-19 12:05:29.000000000 Z
   vulnerabilities:
-  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+  - name: 'Duplicate Advisory: Improper Handling of Exceptional Conditions in Newtonsoft.Json'
     cve_id: 
+    cve_url: https://github.com/advisories/GHSA-8rfx-6mr3-5jh3
+    detected_date: Jan 4
+    severity: high
+    first_patched: 13.0.1
+  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+    cve_id: CVE-2024-21907
     cve_url: https://github.com/advisories/GHSA-5crp-9r3c-p9vr
     detected_date: Jun 23
     severity: high
